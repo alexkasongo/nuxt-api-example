@@ -32,9 +32,9 @@ export default {
           to: { name: 'index' },
         },
         {
-          title: 'Inspire',
+          title: 'Hire Me',
           icon: 'lightbulb',
-          to: { name: 'inspire' },
+          to: { name: 'hireMe' },
         },
       ],
     }

@@ -5,8 +5,7 @@
         <div class="container">
           <a @click.stop="$router.push('/posts')" class="backButton">
             <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-              <i class="fa fa-arrow-left fa-stack-1x" aria-hidden="true"></i>
+              <b-icon icon="arrow-left" />
             </span>
           </a>
           <h1 class="title">
@@ -22,16 +21,6 @@
 </template>
 
 <script>
-// function titleCase(title) {
-//   if (title === null || title === '') {
-//     return false
-//   } else {
-//     return title.replace(/\w\S*/g, function (txt) {
-//       return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
-//     })
-//   }
-//   console.log(`_id.vue - 33 - 🍎`, title)
-// }
 export default {
   head() {
     return {
@@ -65,3 +54,20 @@ export default {
   methods: {},
 }
 </script>
+
+<style lang="scss">
+.backButton {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  z-index: 9;
+  transition: 0.3s ease;
+  background-color: #ccc;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
