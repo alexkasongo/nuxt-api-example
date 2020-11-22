@@ -4,10 +4,10 @@
     <section class="columns is-desktop hero is-primary mb-5">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">Vuex, axios, and a REST API with Nuxt</h1>
+          <h1 class="title">Nuxt, Vuex, Axios & a REST API</h1>
           <h2 class="subtitle">
-            Showing a collections of posts and using dynamic routes for
-            individual posts
+            Retrieve and display posts from an external API and view each post
+            using a dynamic route.
           </h2>
         </div>
       </div>
