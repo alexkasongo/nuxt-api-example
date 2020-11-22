@@ -19,7 +19,7 @@
     <div class="columns is-desktop contentContainer mt-5">
       <a
         class="button is-info is-outlined viewPostsButton"
-        @click="$router.push('/postsview')"
+        @click="$router.push('/posts')"
       >
         <span>View Posts</span>
         <span class="icon">
@@ -40,5 +40,8 @@ export default {
       return HomeContent
     },
   },
+  // mounted() {
+  //   this.$store.dispatch('getPosts')
+  // },
 }
 </script>
