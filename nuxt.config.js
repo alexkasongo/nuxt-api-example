@@ -8,7 +8,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Nuxt API Example - Using Vuex, axios, and a REST API with Nuxt by Alex Kasongo' },
       { property: 'og:title', content: 'Nuxt API Example' },
       { property: 'og:description', content: 'Retrieve and display posts from an external API and view each post using a dynamic route.' },
-      { property: 'og:image', content: 'https://alexkasongo.github.io/nuxt-api-example/static/thumbnail.png"' },
+      { property: 'og:image', content: 'https://alexkasongo.github.io/nuxt-api-example/assets/img/thumbnail.png' },
       { property: 'og:url', content: 'https://alexkasongo.github.io/nuxt-api-example/' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { property: 'og:site_name', content: 'Nuxt API Example' },
