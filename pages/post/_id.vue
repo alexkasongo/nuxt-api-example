@@ -9,7 +9,7 @@
             </span>
           </a>
           <h1 class="title">
-            {{ post.title }}
+            {{ titleCase }}
           </h1>
         </div>
       </div>
@@ -24,7 +24,7 @@
 export default {
   head() {
     return {
-      title: 'Post',
+      title: this.titleCase,
     }
   },
   data: () => ({
@@ -49,7 +49,7 @@ export default {
     },
   },
   mounted() {
-    // this.title = this.titleCase
+    this.title = this.titleCase
   },
   methods: {},
 }
