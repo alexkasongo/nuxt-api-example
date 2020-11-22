@@ -12,11 +12,11 @@
         </div>
       </div>
     </section>
-    <div
+    <section
       v-html="content"
       class="columns is-desktop contentWrapper content mb-5"
-    ></div>
-    <div class="columns is-desktop contentContainer mt-5">
+    ></section>
+    <section class="columns is-desktop contentContainer mt-5">
       <a
         class="button is-info is-outlined viewPostsButton"
         @click="$router.push('/posts')"
@@ -26,7 +26,7 @@
           <i class="fa fa-arrow-circle-right"></i>
         </span>
       </a>
-    </div>
+    </section>
     <!-- </div> -->
   </section>
 </template>
@@ -40,8 +40,5 @@ export default {
       return HomeContent
     },
   },
-  // mounted() {
-  //   this.$store.dispatch('getPosts')
-  // },
 }
 </script>

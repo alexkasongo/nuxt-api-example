@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section class="section">
     <section class="hero is-primary">
       <div class="hero-body">
         <div class="container">
@@ -15,38 +15,28 @@
         </div>
       </div>
     </section>
-    <div class="container">
-      <section>
-        <div class="content" v-html="post.body"></div>
-      </section>
-    </div>
-  </div>
+    <section class="section">
+      <div class="content" v-html="post.body"></div>
+    </section>
+  </section>
 </template>
 
 <script>
-// function titleCase (title) {
-//   if ((title===null) || (title===''))
-//        return false;
-//   else
-//    title = title.toString();
-//
-//  return title.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+// function titleCase(title) {
+//   if (title === null || title === '') {
+//     return false
+//   } else {
+//     return title.replace(/\w\S*/g, function (txt) {
+//       return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+//     })
+//   }
 // }
-function titleCase(title) {
-  if (title === null || title === '') {
-    return false
-  } else {
-    return title.replace(/\w\S*/g, function (txt) {
-      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
-    })
-  }
-}
 export default {
-  head() {
-    return {
-      title: titleCase(this.post.title),
-    }
-  },
+  // head() {
+  //   return {
+  //     title: titleCase(this.post.title),
+  //   }
+  // },
   fetch({ store, params }) {
     store.dispatch('getPost', params.id)
   },
@@ -57,24 +47,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-.container section {
-  padding: 1.25em;
-}
-.title {
-  text-transform: capitalize;
-}
-.backButton {
-  position: fixed;
-  left: 10px;
-  bottom: 10px;
-  z-index: 9;
-  transition: 0.3s ease;
-  i {
-    &.fa-circle {
-      color: #3273dc;
-    }
-  }
-}
-</style>

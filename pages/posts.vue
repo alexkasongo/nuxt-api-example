@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <section class="hero is-primary">
+  <section class="section">
+    <section class="columns is-desktop hero is-primary mb-5">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">Posts</h1>
@@ -20,7 +20,7 @@
         </div>
       </div>
     </section>
-  </div>
+  </section>
 </template>
 
 <script>

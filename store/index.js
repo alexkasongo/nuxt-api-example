@@ -12,10 +12,9 @@ export const getters = {
 export const actions = {
     async getPosts({ commit }) {
         let { data } = await axios.get(`https://jsonplaceholder.typicode.com/posts`)
-        console.log(`index.js - 14 - we here`, data);
         commit('setPosts', data)
     },
-    async getPost({ commit, store }, id) {
+    async getPost({ commit }, id) {
         let { data } = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
         commit('setCurrentPost', data)
     },
