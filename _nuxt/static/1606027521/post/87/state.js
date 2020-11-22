@@ -1,0 +1,1 @@
+window.__NUXT__={staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1606027521",layout:"default",error:null,state:{menuIsActive:false,post:{userId:9,id:87,title:"nostrum quis quasi placeat",body:"eos et molestiae\nnesciunt ut a\ndolores perspiciatis repellendus repellat aliquid\nmagnam sint rem ipsum est"},posts:[]},serverRendered:true,routePath:"\u002Fpost\u002F87",config:{}};

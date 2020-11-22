@@ -1,0 +1,1 @@
+window.__NUXT__={staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1606027521",layout:"default",error:null,state:{menuIsActive:false,post:{userId:9,id:88,title:"sapiente omnis fugit eos",body:"consequatur omnis est praesentium\nducimus non iste\nneque hic deserunt\nvoluptatibus veniam cum et rerum sed"},posts:[]},serverRendered:true,routePath:"\u002Fpost\u002F88",config:{}};
