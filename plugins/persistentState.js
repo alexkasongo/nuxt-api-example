@@ -2,6 +2,6 @@ import createPersistedState from 'vuex-persistedstate';
 
 export default ({ store }) => {
     createPersistedState({
-        paths: ['posts']
+        paths: ['posts', 'post']
     })(store);
 };

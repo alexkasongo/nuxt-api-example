@@ -15,10 +15,10 @@ export const actions = {
         console.log(`index.js - 14 - we here`, data);
         commit('setPosts', data)
     },
-    // async getPost({ commit, store }, id) {
-    //     let { data } = await axios.get(`posts/${id}`)
-    //     commit('setCurrentPost', data)
-    // },
+    async getPost({ commit, store }, id) {
+        let { data } = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+        commit('setCurrentPost', data)
+    },
     // async nuxtServerInit({ commit }, { store, isClient, isServer, route, params }) {
     //     if (isServer && route.name === 'postsView') {
     //         let { data } = await axios.get('posts')
@@ -37,7 +37,7 @@ export const mutations = {
     setPosts: (state, posts) => {
         state.posts = posts
     },
-    // setCurrentPost: (state, post) => {
-    //     state.post = post
-    // }
+    setCurrentPost: (state, post) => {
+        state.post = post
+    }
 };

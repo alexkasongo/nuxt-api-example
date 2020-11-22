@@ -13,7 +13,7 @@
         <p class="title"></p>
         <div class="postsWrapper">
           <template v-for="post in Posts">
-            <nuxt-link class="card" :key="post.id" :to="'/posts/' + post.id">{{
+            <nuxt-link class="card" :key="post.id" :to="'/post/' + post.id">{{
               post.title
             }}</nuxt-link>
           </template>
