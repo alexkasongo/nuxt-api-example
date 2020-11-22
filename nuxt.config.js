@@ -49,5 +49,11 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+  },
+
+  // static target since we are hosting on Github pages
+  target: 'static',
+  router: {
+    base: '/nuxt-api-example/'
   }
 }
