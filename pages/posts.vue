@@ -30,11 +30,8 @@ export default {
       title: 'Posts Listing',
     }
   },
-  //   fetch({ store }) {
-  //     store.dispatch('getPosts')
-  //   },
-  mounted() {
-    this.$store.dispatch('getPosts')
+  fetch({ store }) {
+    store.dispatch('getPosts')
   },
   computed: {
     Posts() {

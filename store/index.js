@@ -18,21 +18,21 @@ export const actions = {
         let { data } = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
         commit('setCurrentPost', data)
     },
-    // async nuxtServerInit({ commit }, { store, isClient, isServer, route, params }) {
-    //     if (isServer && route.name === 'postsView') {
-    //         let { data } = await axios.get('posts')
-    //         commit('setPosts', data)
-    //     }
-    //     if (isServer && params.id) {
-    //         let { data } = await axios.get(`posts/${params.id}`)
-    //         commit('setCurrentPost', data)
-    //     }
-    // }
+    async nuxtServerInit({ commit }, { store, isClient, isServer, route, params }) {
+        if (isServer && route.name === 'posts') {
+            let { data } = await axios.get('https://jsonplaceholder.typicode.com/posts')
+            commit('setPosts', data)
+        }
+        if (isServer && params.id) {
+            let { data } = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+            commit('setCurrentPost', data)
+        }
+    }
 };
 export const mutations = {
-    // toggleMenuState(state) {
-    //     state.menuIsActive = !state.menuIsActive
-    // },
+    toggleMenuState(state) {
+        state.menuIsActive = !state.menuIsActive
+    },
     setPosts: (state, posts) => {
         state.posts = posts
     },

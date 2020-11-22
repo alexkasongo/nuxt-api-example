@@ -10,7 +10,7 @@
             </span>
           </a>
           <h1 class="title">
-            {{ post.title }}
+            {{ title }}
           </h1>
         </div>
       </div>
@@ -30,13 +30,17 @@
 //       return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
 //     })
 //   }
+//   console.log(`_id.vue - 33 - 🍎`, title)
 // }
 export default {
-  // head() {
-  //   return {
-  //     title: titleCase(this.post.title),
-  //   }
-  // },
+  head() {
+    return {
+      title: this.title,
+    }
+  },
+  data: () => ({
+    title: '',
+  }),
   fetch({ store, params }) {
     store.dispatch('getPost', params.id)
   },
@@ -44,6 +48,20 @@ export default {
     post() {
       return this.$store.state.post
     },
+    titleCase() {
+      const title = this.$store.state.post.title
+      if (title === null || title === '') {
+        return false
+      } else {
+        return title.replace(/\w\S*/g, function (txt) {
+          return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+        })
+      }
+    },
   },
+  mounted() {
+    this.title = this.titleCase
+  },
+  methods: {},
 }
 </script>
