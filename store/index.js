@@ -19,12 +19,11 @@ export const actions = {
         commit('setCurrentPost', data)
     },
     async nuxtServerInit({ commit }, { store, isClient, isServer, route, params }) {
-        console.log(`index.js - 22 - 🌻`, params);
-        if (route.name === 'posts') {
+        if (isServer && route.name === 'posts') {
             let { data } = await axios.get('https://jsonplaceholder.typicode.com/posts')
             commit('setPosts', data)
         }
-        if (params.id) {
+        if (isServer && params.id) {
             let { data } = await axios.get(`https://jsonplaceholder.typicode.com/posts/${params.id}`)
             commit('setCurrentPost', data)
         }
