@@ -13,9 +13,9 @@
         <p class="title"></p>
         <div class="postsWrapper">
           <template v-for="post in Posts">
-            <a class="card" :key="post.id" @click="viewPost(post.id)">
-              {{ post.title }}
-            </a>
+            <nuxt-link class="card" :key="post.id" :to="'/post/' + post.id">{{
+              post.title
+            }}</nuxt-link>
           </template>
         </div>
       </div>
@@ -36,16 +36,6 @@ export default {
   computed: {
     Posts() {
       return this.$store.state.posts
-    },
-  },
-  methods: {
-    viewPost(id) {
-      this.$router.push({
-        name: 'post-id',
-        params: {
-          id: id,
-        },
-      })
     },
   },
 }
