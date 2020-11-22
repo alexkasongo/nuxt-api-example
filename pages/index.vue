@@ -18,7 +18,7 @@
     ></section>
     <section class="columns is-desktop contentContainer mt-5">
       <a
-        class="button is-info is-outlined viewPostsButton"
+        class="button is-primary is-outlined viewPostsButton"
         @click="$router.push('/posts')"
       >
         <span>View Posts</span>

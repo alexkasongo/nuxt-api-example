@@ -3,7 +3,10 @@
     <section class="hero is-primary">
       <div class="hero-body">
         <div class="container">
-          <a @click.stop="$router.push('/posts')" class="backButton">
+          <a
+            @click.stop="$router.push('/posts')"
+            class="backButton button is-primary is-outlined"
+          >
             <span class="fa-stack fa-lg">
               <b-icon icon="arrow-left" />
             </span>

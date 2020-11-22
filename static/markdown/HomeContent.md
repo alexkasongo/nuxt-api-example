@@ -10,3 +10,4 @@
 - Nuxt Modules are used to add Beufy and markdown-it.
 - Axios is used as a Nuxt plugin, which is added durin the npx create-nuxt-app.
 - I am using Githup pages for hosting this example as a static site.
+- [Nuxt Documentation](https://nuxtjs.org/docs/2.x/get-started/installation)
