@@ -9,7 +9,7 @@ export default {
       { property: 'og:title', content: 'Nuxt API Example' },
       { property: 'og:description', content: 'Showing a collections of posts and using dynamic routes for individual posts with Nuxt.js Vuex, and an API.' },
       // { property: 'og:image', content: 'https://nuxt-api-example.netlify.com/nuxt-api-example-meta-image.jpg' },
-      // { property: 'og:url', content: 'https://nuxt-api-example.netlify.com' },
+      { property: 'og:url', content: 'https://alexkasongo.github.io/nuxt-api-example/' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { property: 'og:site_name', content: 'Nuxt API Example' },
       { name: 'twitter:image:alt', content: 'Screenshot of home page for demo site' }
